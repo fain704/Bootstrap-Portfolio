@@ -4,6 +4,8 @@ body{
 main{
 	margin: 1%;
 	height: 100%;
+	/*overflow-y: auto;*/
+	margin-bottom: 15%
 }
 
 .container{
@@ -16,14 +18,13 @@ main{
 	margin: 1%;
 	float: left;
 }
-.col-8{
-	overflow-y: auto;
+.material{
 	background-color: white;
 }
 
 .footer{
-	position: relative;
-	bottom: 0;
+/*	position: absolute;
+	bottom: 0;*/
 	width: 100%;
 	height: 10%;
 	background-color: #f5f5f5;
@@ -37,7 +38,6 @@ main{
 }
 
 .placement{
-	max-width: ;
 	text-align: center;
 	max-height: 20%;
 	background-color: rgba(100,149,237,.7);
