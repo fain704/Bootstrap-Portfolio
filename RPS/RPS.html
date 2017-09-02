@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Untitled</title>
+        <!-- <link rel="stylesheet" href="css/style.css"> -->
+        <link rel="author" href="humans.txt">
+    </head>
+    <body>
+    
+        <h1>Open the Console to see the magic!!!!!!</h1>
+
+        <script>
+        	var answersPossible  = ["ROCK", "PAPER", "SCISSORS", "LIZARD", "SPOCK"];
+
+     	// var rand  = answersPossible.length * Math.random();
+    	// var noDecimal = Math.floor(rand);
+
+    	alert('Shall we play a game?');
+
+    	alert('The rules according to Dr Sheldon Cooper: "Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors." ')
+
+for (var i = 0; i < 5.; i++) {
+       	var userAnswer = prompt("Rock, Paper, Scissors, Lizard, Spock");
+       				//(0, 1, 2, 3, 4)
+        	var userAnswer = userAnswer.toUpperCase();
+
+        	var validAnswer = answersPossible.indexOf(userAnswer);
+
+	if(validAnswer > -1) {
+        		alert('You chose ' + answersPossible[validAnswer]);
+
+        		computerAnswer = Math.floor(answersPossible.length* Math.random());
+
+        		alert('I chose ' + answersPossible[computerAnswer])
+	} 
+
+
+
+	if (validAnswer=== 2 && computerAnswer===1) {		//Scissors cuts paper (2-1)
+
+		alert('Scissors cuts paper, you win')
+
+	} else if (validAnswer=== 1 && computerAnswer===0) {	//paper covers rock (1-0)
+
+		alert('Paper covers rock, you win')
+
+	} else if (validAnswer=== 0 && computerAnswer===3) {	//rock crushes lizard (0-3)
+
+		alert('Rock crushes lizard, you win')
+
+	} else if (validAnswer=== 3 && computerAnswer===4) {	//lizard poisons Spock (3-4)
+
+		alert('Lizard poisons Spock, you win')
+
+	} else if (validAnswer=== 4 && computerAnswer===2) {	//Spock smashes scissors (4-2)
+
+		alert('Spock smashes scissors, you win')
+
+	} else if (validAnswer=== 3 && computerAnswer===4) {	//scissors decapitates lizard (3-4)
+
+		alert('scissors decapitates lizard, you win')
+
+	} else if (validAnswer=== 3 && computerAnswer===1) {	//lizard eats paper (4-1)
+
+		alert('Lizard eats paper, you win')
+
+	} else if (validAnswer=== 1 && computerAnswer===4) {	//paper disproves Spock (1-4)
+
+		alert('Paper disproves Spock, you win')
+
+	} else if (validAnswer=== 4 && computerAnswer===0) {	//Spock vaporizes rock (4-0)
+
+		alert('Spock vaporizes rock, you win')
+
+	} else if (validAnswer=== 0 && computerAnswer===2) {	//rock crushes scissors (0-2)
+
+		alert('Rock crushes scissors, you win')
+
+	} else if (computerAnswer=== 2 && validAnswer===1) {	//Scissors cuts paper (2-1)
+
+		alert('Scissors cuts paper, I win')
+
+	} else if (computerAnswer=== 1 && validAnswer===0) {	//paper covers rock (1-0)
+
+		alert('Paper covers rock, I win')
+
+	} else if (computerAnswer=== 0 && validAnswer===3) {	//rock crushes lizard (0-3)
+
+		alert('Rock crushes lizard, I win')
+
+	} else if (computerAnswer=== 3 && validAnswer===4) {	//lizard poisons Spock (3-4)
+
+		alert('Lizard poisons Spock, I win')
+
+	} else if (computerAnswer=== 4 && validAnswer===2) {	//Spock smashes scissors (4-2)
+
+		alert('Spock smashes scissors, I win')
+
+	} else if (computerAnswer=== 3 && validAnswer===4) {	//scissors decapitates lizard (3-4)
+
+		alert('Scissors decapitates lizard, I win')
+
+	} else if (computerAnswer=== 3 && validAnswer===1) {	//lizard eats paper (3-1)
+
+		alert('Lizard eats paper, I win')
+
+	} else if (computerAnswer=== 1 && validAnswer===4) {	//paper disproves Spock (1-4)
+
+		alert('Paper disproves Spock, I win')
+
+	} else if (computerAnswer=== 4 && validAnswer===0) {	//Spock vaporizes rock (4-0)
+
+		alert('Spock vaporizes rock, I win')
+
+	} else if (computerAnswer=== 0 && validAnswer===2) {	//rock crushes scissors (0-2)
+
+		alert('Rock crushes scissors, I win')
+
+	} else if (computerAnswer === validAnswer) {
+		i = i-1
+	}
+
+
+	console.log(answersPossible[validAnswer]);
+	console.log(answersPossible[computerAnswer]);
+	console.log(i);
+}	
+        </script>
+    </body>
+</html>
