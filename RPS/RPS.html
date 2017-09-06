@@ -59,7 +59,7 @@ for (var i = 0; i < 5.; i++) {
 
 		alert('Spock smashes scissors, you win')
 
-	} else if (validAnswer=== 3 && computerAnswer===4) {	//scissors decapitates lizard (3-4)
+	} else if (validAnswer=== 2 && computerAnswer===3) {	//scissors decapitates lizard (3-4)
 
 		alert('scissors decapitates lizard, you win')
 
@@ -99,7 +99,7 @@ for (var i = 0; i < 5.; i++) {
 
 		alert('Spock smashes scissors, I win')
 
-	} else if (computerAnswer=== 3 && validAnswer===4) {	//scissors decapitates lizard (3-4)
+	} else if (computerAnswer=== 2 && validAnswer===3) {	//scissors decapitates lizard (2-3)
 
 		alert('Scissors decapitates lizard, I win')
 
@@ -120,8 +120,8 @@ for (var i = 0; i < 5.; i++) {
 		alert('Rock crushes scissors, I win')
 
 	} else if (computerAnswer === validAnswer) {
+		alert("we picked the same thing, lets go again.")
 		i = i-1
-
 		if (i===-1) {
 			i=0
 		}
